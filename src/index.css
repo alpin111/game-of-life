@@ -49,14 +49,14 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .Half {
+  /* .Half {
     max-width:90%;
-  }
+  } */
 } 
 
 @media (max-width: 720px) {
   .Half {
-    max-width:50%;
+    max-width:300px;
   }
 } 
 
