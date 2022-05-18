@@ -33,7 +33,6 @@ function App() {
           <Half>
           <h2>What is it?</h2>
             <p>"Conway's Game of Life" (or just "Life") is a cellular automaton: a grid of cells, with each cell changing its state over time.</p>
-            <p>It simulates the evolution of complexity.</p>
             <p>The simulation works as a zero-player game, meaning that its evolution is <b>determined only by its initial state.</b></p>
           </Half>
 
