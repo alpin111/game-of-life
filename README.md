@@ -13,6 +13,8 @@ scr/patterns.js
 
 
 *input:* 
+    
+    
     `
     ......O...
 
@@ -29,7 +31,7 @@ scr/patterns.js
     .O.....OO.
 
     ........OO
-    
+
     .......O..`
 
 *output:* 
