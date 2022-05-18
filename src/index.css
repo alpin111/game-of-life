@@ -38,6 +38,12 @@ p {
   padding: 1vh;
 }
 
+@media (max-width: 1200px) {
+  .Half {
+    max-width:100%;
+  }
+} 
+
 img, .CanvasClassName {
   width:100%;
 }
