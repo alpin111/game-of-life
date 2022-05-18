@@ -40,7 +40,7 @@ p {
 }
 
 .Half {
-  max-width:300px;
+  width:20vw;
   padding: 1vh;
 }
 
@@ -49,9 +49,10 @@ p {
     display: flex;
     flex-direction: column;
   }
-  /* .Half {
-    max-width:90%;
-  } */
+  .Half {
+    width:90vw;
+    padding: 1vh;
+  }
 } 
 
 /* @media (max-width: 720px) {
