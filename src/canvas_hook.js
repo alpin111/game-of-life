@@ -10,7 +10,7 @@ const Canvas = ({draw, height, width, data}) => {
       draw(context, data);
     }, [canvas]);
 
-    return (<div className="GameOfLife"  style={{display:"block"}}>
+    return (<div className="CanvasClassName"  style={{display:"block"}}>
       <canvas ref={canvas} height={height} width={width} />
       <br/>
       <button

@@ -38,8 +38,8 @@ p {
   padding: 1vh;
 }
 
-img {
-  width:400px;
+img, .CanvasClassName {
+  width:100%;
 }
 
 
