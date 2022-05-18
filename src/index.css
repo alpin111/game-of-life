@@ -18,10 +18,14 @@
 
 body {
   margin: 0;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-family: 'Plex';
   color: lightgrey;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(29, 32, 36);
 }
 
 h1, h2, h3 {
@@ -40,6 +44,7 @@ p {font-size: 18px;}
 
 .Half {
   width:400px;
+  padding: 1vw;
 }
 
 
@@ -58,8 +63,8 @@ p {font-size: 18px;}
   } 
   .Half {
     width:100%;
+    padding: 0vw;
   }
-
   /* otherwise the text will go outside mobile screen */
   .container { 
     display: block;
@@ -95,6 +100,15 @@ button:hover {color:#F6F1EA;}
 
 .Description {font-size: 16px}
 
-a {color: rgb(136, 136, 255);}
+a {
+  color: rgb(136, 136, 255);
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  hyphens: auto;}
 b {color: white;}
 
