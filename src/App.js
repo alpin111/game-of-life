@@ -25,7 +25,9 @@ function App() {
 
   
     <div className="App">
+      <p/>
         <div className="container"><h1>Conway's Game of Life</h1></div>
+      <p/>
 
         <Pair>
           <Half>
