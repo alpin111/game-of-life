@@ -38,13 +38,8 @@ p {
   padding: 1vh;
 }
 
-@media (max-width: 1200px) {
-  .Half {
-    max-width:100%;
-  }
-} 
 
-img, .CanvasClassName {
+img, canvas {
   width:100%;
 }
 
@@ -81,6 +76,10 @@ button:focus {
     display: flex;
     flex-direction: column;
   }
+  .Half {
+    max-width:100%;
+  }
+
 } 
 
 
@@ -88,7 +87,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(62, 62, 110);
   background-color: rgb(29, 32, 36);
 }
 
@@ -108,7 +106,3 @@ b {
   color: white;
 }
 
-/* .Text {
-  max-width:400px; 
-  padding: 50px;
-} */
