@@ -34,12 +34,12 @@ p {
 }
 
 .Half {
-  max-width:500px;
+  max-width:400px;
   padding: 1vh;
 }
 
 img {
-  width:500px;
+  width:400px;
 }
 
 
@@ -67,7 +67,6 @@ button:focus {
 .Pair {
   display: flex;
   flex-direction: row;
-
   margin-bottom: 5vh;
 }
 
@@ -88,7 +87,6 @@ button:focus {
 }
 
 .App {
-  /* min-width: 80vw; */
   background-color: rgb(29, 32, 36);
 }
 
@@ -105,6 +103,6 @@ b {
 }
 
 /* .Text {
-  max-width:500px; 
+  max-width:400px; 
   padding: 50px;
 } */

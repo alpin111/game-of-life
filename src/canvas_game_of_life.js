@@ -140,7 +140,7 @@ context = new GameWorld()
   function App({data}) {
     return (
     <>
-    <Canvas draw={draw} height={500} width={500} data={data} />
+    <Canvas draw={draw} height={400} width={400} data={data} />
       </>);
   }
 
