@@ -40,7 +40,7 @@ p {
 }
 
 .Half {
-  max-width:400px;
+  max-width:300px;
   padding: 1vh;
 }
 
@@ -54,11 +54,11 @@ p {
   } */
 } 
 
-@media (max-width: 720px) {
+/* @media (max-width: 720px) {
   .Half {
     max-width:300px;
   }
-} 
+}  */
 
 
 img, canvas {
