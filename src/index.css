@@ -1,22 +1,110 @@
+@font-face {
+  font-family: "Plex";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./IBMPlexMono-Regular.woff2") format("woff2"),
+       url("./IBMPlexMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Plex";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./IBMPlexMono-Bold.woff") format("woff2"),
+       url("./IBMPlexMono-Bold.woff2") format("woff");
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Plex';
+  color: lightgrey;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3 {
+  color:rgb(0, 238, 255)
 }
 
+
+
 p {
-  font-size: 30px;
+  font-size: 18px;
+}
+
+.Half {
+  max-width:500px;
+  padding: 1vh;
 }
 
 img {
-  max-width:500px;
-  height:auto;
+  width:500px;
 }
+
+
+button {
+  background: black;
+  color: rgb(0, 238, 255);
+  text-align: center;
+  vertical-align: middle;
+  padding: 1vh;
+  border: none;
+  font-size: 16px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+button:hover {
+  color:#F6F1EA;
+}
+
+button:focus {
+  outline-color: red;
+}
+
+
+.Pair {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 1200px) {
+  .Pair {
+    display: flex;
+    flex-direction: column;
+  }
+} 
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(62, 62, 110);
+  background-color: rgb(29, 32, 36);
+}
+
+.App {
+  /* min-width: 80vw; */
+  background-color: rgb(29, 32, 36);
+}
+
+.Description {
+  font-size: 16px
+}
+
+a {
+  color: rgb(136, 136, 255);
+}
+
+b {
+  color: white;
+}
+
+/* .Text {
+  max-width:500px; 
+  padding: 50px;
+} */

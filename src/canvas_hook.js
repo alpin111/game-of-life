@@ -10,7 +10,7 @@ const Canvas = ({draw, height, width, data}) => {
       draw(context, data);
     }, [canvas]);
 
-    return (<div style={{display:"block"}}>
+    return (<div className="GameOfLife"  style={{display:"block"}}>
       <canvas ref={canvas} height={height} width={width} />
       <br/>
       <button
@@ -19,7 +19,7 @@ const Canvas = ({draw, height, width, data}) => {
         context.clearRect(0, 0, 500, 500);
         draw(context, data);
         
-      }}>start</button>
+      }}>restart this universe</button>
 
     </div>);
   };
