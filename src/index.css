@@ -14,6 +14,7 @@
        url("./IBMPlexMono-Bold.woff2") format("woff");
 }
 
+/* *{outline: solid 1px rgba(255,0,0,0.25)} */
 
 body {
   margin: 0;
@@ -29,9 +30,7 @@ h1, h2, h3 {
 
 
 
-p {
-  font-size: 18px;
-}
+p {font-size: 18px;}
 
 .Pair {
   display: flex;
@@ -40,26 +39,34 @@ p {
 }
 
 .Half {
-  width:20vw;
-  padding: 1vh;
+  width:400px;
 }
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(29, 32, 36);
+}
+
 
 @media (max-width: 1200px) {
   .Pair {
     display: flex;
     flex-direction: column;
-  }
+  } 
   .Half {
-    width:90vw;
-    padding: 1vh;
+    width:100%;
+  }
+
+  /* otherwise the text will go outside mobile screen */
+  .container { 
+    display: block;
   }
 } 
 
-/* @media (max-width: 720px) {
-  .Half {
-    max-width:300px;
-  }
-}  */
+
 
 
 img, canvas {
@@ -79,40 +86,15 @@ button {
   margin-bottom: 1vh;
 }
 
-button:hover {
-  color:#F6F1EA;
-}
+button:hover {color:#F6F1EA;}
 
-button:focus {
-  outline-color: red;
-}
-
-
-
-
-
-
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(29, 32, 36);
-}
 
 .App {
   background-color: rgb(29, 32, 36);
 }
 
-.Description {
-  font-size: 16px
-}
+.Description {font-size: 16px}
 
-a {
-  color: rgb(136, 136, 255);
-}
-
-b {
-  color: white;
-}
+a {color: rgb(136, 136, 255);}
+b {color: white;}
 

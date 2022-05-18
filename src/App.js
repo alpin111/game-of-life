@@ -1,4 +1,3 @@
-// import './App.css';
 import GameOfLife from './canvas_game_of_life';
 import * as patterns from './patterns';
 
@@ -25,9 +24,8 @@ function App() {
 
   
     <div className="App">
-      <p/>
-        <div className="container"><h1>Conway's Game of Life</h1></div>
-      <p/>
+
+      <h1>Conway's Game of Life</h1>
 
         <Pair>
           <Half>
@@ -135,7 +133,6 @@ function App() {
             <ol type="1">
               <li><b>Turing-Complete</b>, meaning it can be used to build the logic gates AND, OR, and NOT using glider collisions.</li>
               <li>a <b>universal constructor</b>, a self-replicating machine with the ability to mutate and grow in complexity.</li>
-              {/* <li>it explores how design and organization can spontaneously emerge in the absence of a designer. </li> */}
             </ol> 
             </p>
           </Half>
@@ -169,7 +166,6 @@ function App() {
           
         </Pair>
 
-        <p/><p/><p/>
 
 
         
