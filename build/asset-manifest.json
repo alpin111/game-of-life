@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26396637.css",
+    "main.js": "/static/js/main.5b7ac2d6.js",
+    "static/media/Trefoil_knot.gif": "/static/media/Trefoil_knot.324caa95ccb1902e4e09.gif",
+    "static/media/crystal.jpg": "/static/media/crystal.b0cc8ec2a674d1265a3a.jpg",
+    "index.html": "/index.html",
+    "main.26396637.css.map": "/static/css/main.26396637.css.map",
+    "main.5b7ac2d6.js.map": "/static/js/main.5b7ac2d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26396637.css",
+    "static/js/main.5b7ac2d6.js"
+  ]
+}
