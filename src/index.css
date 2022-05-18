@@ -44,16 +44,20 @@ p {
   padding: 1vh;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1200px) {
   .Pair {
     display: flex;
     flex-direction: column;
   }
   .Half {
-    max-width:100px;
-    padding: 0vh;
+    max-width:90%;
   }
+} 
 
+@media (max-width: 720px) {
+  .Half {
+    max-width:50%;
+  }
 } 
 
 
