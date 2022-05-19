@@ -38,7 +38,7 @@ function App() {
 
           <Half>
             <GameOfLife data={patterns.sirRobin}  /> 
-            <Description>A so-called <b>Sir Robin</b>, found by Adam P. Goucher on March 6, 2018, based on a partial by Tomas Rokicki. </Description>
+            <Description>The pattern <b>Sir Robin</b>, found by Adam P. Goucher on March 6, 2018, based on a partial by Tomas Rokicki. </Description>
           </Half>
 
         </Pair>
@@ -50,7 +50,7 @@ function App() {
             <h2>The origins</h2>
             <p>At the Los Alamos National Laboratory in the 1940s, a researcher named Stanislaw Ulam studied the growth of crystals.</p>
             <p>There was also some other guy called John von Neumann at Los Alomos, working on the problem of self-replicating systems.</p>
-            <p>Inspired by both, John Conway began his experiments in 1968. His goal was to define an <b>unpredictable cellular automaton.</b></p>
+            <p>Inspired by both, John Conway began his experiments in 1968. His goal: an <b>unpredictable cellular automaton.</b></p>
           </Half>
   
           <Half>
@@ -152,7 +152,7 @@ function App() {
           <Half>
             <h2>So long, and thanks for all the patterns</h2>
 
-            <p>You can find the commented source code of this page and how to build your own game of life with Javascript & React here:</p>
+            <p>You can find the commented source code of this page and how to build your own game of life with JavaScript, Canvas API & React here:</p>
             <a href="https://github.com/alpin111/game-of-life">https://github.com/alpin111/game-of-life</a> 
 
 
