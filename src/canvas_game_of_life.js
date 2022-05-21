@@ -45,6 +45,7 @@ class GameWorld {
       //   HTMLCanvasElement.getContext() method returns a drawing context on the canvas (2d, webgl)
         this.context = context //this.canvas.getContext('2d'); 
         this.gameObjects = [];
+        this.loopcount = 0
 
         this.createGrid();
 
@@ -114,6 +115,10 @@ class GameWorld {
     }
 
     gameLoop() {
+
+        if (this.loopcount < 500){
+
+        this.loopcount += 1
         // Check the surrounding of each cell
         this.checkSurrounding();
 
@@ -125,9 +130,11 @@ class GameWorld {
             this.gameObjects[i].drawCell();
         }    
         // The loop function has reached it's end, keep requesting new frame
-        // setTimeout( () => {
+        setTimeout( () => {
           window.requestAnimationFrame(() => this.gameLoop());
-      // }, 10)
+      }, 10)
+}
+
     }
 }
 context = new GameWorld()

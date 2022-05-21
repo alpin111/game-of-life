@@ -7,8 +7,8 @@ const Canvas = ({draw, height, width, data}) => {
     
     React.useEffect(() => { // The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
       const context = canvas.current.getContext('2d');
-      draw(context, data);
-    }, [canvas]);
+      // draw(context, data);
+    }, []);
 
     return (<div className="CanvasClassName"  style={{display:"block"}}>
       <canvas ref={canvas} height={height} width={width} />
@@ -19,7 +19,7 @@ const Canvas = ({draw, height, width, data}) => {
         context.clearRect(0, 0, 500, 500);
         draw(context, data);
         
-      }}>restart this universe</button>
+      }}>start this universe</button>
 
     </div>);
   };
@@ -28,9 +28,9 @@ const Canvas = ({draw, height, width, data}) => {
   // For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application. 
   // But even if you don’t use those, React has some built-in typechecking abilities. 
 
-  Canvas.propTypes = {
-    draw: PropTypes.func.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-  };
+  // Canvas.propTypes = {
+  //   draw: PropTypes.func.isRequired,
+  //   height: PropTypes.number.isRequired,
+  //   width: PropTypes.number.isRequired,
+  // };
   export default Canvas;

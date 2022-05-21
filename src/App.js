@@ -1,6 +1,7 @@
 import GameOfLife from './canvas_game_of_life';
 import * as patterns from './patterns';
 
+import Simple from './simple_canvas'
 
 function Pair(props) {
   return <div className="Pair">{props.children}</div>
