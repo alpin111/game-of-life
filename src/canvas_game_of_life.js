@@ -19,6 +19,7 @@ class Cell {
       // Make random cells alive
     //   The Math.random() function returns a floating-point, pseudo-random number in the range 0 to less than 1 (inclusive of 0, but not 1)
       this.alive = alive
+
   }
 
   drawCell() {
@@ -46,6 +47,7 @@ class GameWorld {
         this.context = context //this.canvas.getContext('2d'); 
         this.gameObjects = [];
         this.loopcount = 0
+        this.reset = false
 
         this.createGrid();
 
@@ -118,22 +120,22 @@ class GameWorld {
 
         if (this.loopcount < 500){
 
-        this.loopcount += 1
-        // Check the surrounding of each cell
-        this.checkSurrounding();
+            this.loopcount += 1
+            // Check the surrounding of each cell
+            this.checkSurrounding();
 
-        // Clear the screen
-        this.context.clearRect(0, 0, 500, 500);
+            // Clear the screen
+            this.context.clearRect(0, 0, 500, 500);
 
-        // Draw all the gameobjects
-        for (let i = 0; i < this.gameObjects.length; i++) {
-            this.gameObjects[i].drawCell();
-        }    
-        // The loop function has reached it's end, keep requesting new frame
-        setTimeout( () => {
-          window.requestAnimationFrame(() => this.gameLoop());
-      }, 10)
-}
+            // Draw all the gameobjects
+            for (let i = 0; i < this.gameObjects.length; i++) {
+                this.gameObjects[i].drawCell();
+            }    
+            // The loop function has reached it's end, keep requesting new frame
+            setTimeout( () => {
+              window.requestAnimationFrame(() => this.gameLoop());
+            }, 10)
+        }
 
     }
 }

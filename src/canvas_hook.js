@@ -2,12 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Canvas = ({draw, height, width, data}) => {
+const Canvas = ({draw, height, width, data, Columns}) => {
     const canvas = React.useRef();  // The useRef Hook allows you to persist values between renders.
     
     React.useEffect(() => { // The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
       const context = canvas.current.getContext('2d');
-      // draw(context, data);
+      draw(context, data, Columns, true);
     }, []);
 
     return (<div className="CanvasClassName"  style={{display:"block"}}>
@@ -17,9 +17,9 @@ const Canvas = ({draw, height, width, data}) => {
         onClick={() => {
         const context = canvas.current.getContext('2d');
         context.clearRect(0, 0, 500, 500);
-        draw(context, data);
+        draw(context, data, Columns);
         
-      }}>start this universe</button>
+      }}>start cell evolution</button>
 
     </div>);
   };

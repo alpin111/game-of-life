@@ -1,7 +1,7 @@
-import GameOfLife from './canvas_game_of_life';
+// import GameOfLife from './canvas_game_of_life';
 import * as patterns from './patterns';
-
-import Simple from './simple_canvas'
+import GameOfLife from './canvas_functional';
+// import Simple from './simple_canvas'
 
 function Pair(props) {
   return <div className="Pair">{props.children}</div>
@@ -28,6 +28,7 @@ function App() {
 
     <div className="container">
       <h1>Conway's Game of Life</h1>
+      {/* <GameOfLifeFunctional data={patterns.sirRobin} /> */}
     </div>
 
         <Pair>
@@ -79,7 +80,7 @@ function App() {
           </Half>
           
           <Half>
-            <GameOfLife data={patterns.GIG}  /> 
+            <GameOfLife data={patterns.GIG} size={50}  /> 
             <Description>A <b>GIG</b> or glider injection gate: a device for injecting a glider into a glider stream. This specific example is a pseudo-period 14 glider stream discovered by Dieter Leithner in 1996.</Description>
           </Half>
         </Pair>
@@ -102,7 +103,7 @@ function App() {
           </Half>
           
           <Half>
-            <GameOfLife data={patterns.basicPatterns}  />
+            <GameOfLife data={patterns.basicPatterns} size={60} />
             <Description>Still lives on the left, oscillators on the right. Spaceships below the block wall.</Description>
           </Half>
            
@@ -120,7 +121,7 @@ function App() {
           
           
           <Half>
-            <GameOfLife data={patterns.gliderGun}  />
+            <GameOfLife data={patterns.gliderGun}  size={60} />
             <Description>The <b>Gosper glider gun</b>, the first known gun and finite pattern producing infinite growth. Discovered by Bill Gosper and his team in November 1970.</Description>
           </Half>
 
@@ -141,7 +142,7 @@ function App() {
           </Half>
           
           <Half>
-            <GameOfLife data={patterns.gliderSynthesisPentadecathlon}  />
+            <GameOfLife data={patterns.gliderSynthesisPentadecathlon} size={40} />
             <Description>A <b>3-glider synthesis</b> of a pentadecathlon, found in April 1997 by Heinrich Koenig. A <b>universal constructor</b> would be a pattern capable of constructing any pattern that has a glider synthesis.</Description>
           </Half>
 
